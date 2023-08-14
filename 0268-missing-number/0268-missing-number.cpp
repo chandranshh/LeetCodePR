@@ -2,17 +2,23 @@ class Solution {
 public:
 int missingNumber(vector<int>& nums) {
   int n = nums.size();
-
-  if (n < 1 || n > 10e4) {
+  if(n<1 && n>10e4){
     return -1;
   }
+  int m=-1;
 
-  int totalSum = (n * (n + 1)) / 2;
-  int actualSum = 0;
-  for (int i = 0; i < n; i++) {
-    actualSum += nums[i];
+  vector<int> h(n+1);
+
+  for(int i=0;i<n;i++){
+    h[nums[i]]++;
   }
 
-  return totalSum - actualSum;
+  for(int i=0;i<=n;i++){
+    if(h[i]!=1){
+      m=i;
+    }
+  }
+  return m;
 }
+
 };
