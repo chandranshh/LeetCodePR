@@ -9,7 +9,7 @@ public:
                 firstPos= i;
                 pass++;
             }
-            if(nums[i]==target && pass>=1){
+            if(nums[i]==target && pass>0){
                 lastPos = i;
                 pass++;
             }
