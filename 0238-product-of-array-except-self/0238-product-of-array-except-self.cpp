@@ -1,5 +1,3 @@
-#include <vector>
-
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
@@ -12,11 +10,9 @@ public:
         for (int i = 0; i < n; i++) {
             answer[i] *= leftProduct;
             leftProduct *= nums[i];
-        }
 
-        for (int i = n - 1; i >= 0; i--) {
-            answer[i] *= rightProduct;
-            rightProduct *= nums[i];
+            answer[n - 1 - i] *= rightProduct;
+            rightProduct *= nums[n - 1 - i];
         }
 
         return answer;
