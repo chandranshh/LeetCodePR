@@ -12,12 +12,13 @@ public:
             int mid = low + (high - low)/2;
           
 
-            if(isBadVersion(mid) == true){
-                high = mid - 1;
+            if(isBadVersion(mid) == false){
+                
+                low = mid + 1;
                
             }
-            else if(isBadVersion(mid)==false){
-                low = mid + 1;
+            else{
+                high = mid - 1;
             }
 
            
