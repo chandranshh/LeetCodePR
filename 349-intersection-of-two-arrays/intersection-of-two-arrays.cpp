@@ -1,16 +1,20 @@
 class Solution {
 public:
-    vector<int> intersection(vector<int>& nums1, std::vector<int>& nums2) {
-        unordered_set<int> set(nums1.begin(), nums1.end());
-        vector<int> result;
-
-        for (int num : nums2) {
-            if (set.find(num) != set.end()) {
-                result.push_back(num);
-                set.erase(num);
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        map<int,int> m;
+        vector<int> ans;
+        for(auto i : nums1)
+        {
+            m[i]=1;
+        }
+        for(auto i : nums2)
+        {
+            if(m[i]==1)
+            {
+                m[i]++;
+                ans.push_back(i);
             }
         }
-
-        return result;
+        return ans;
     }
 };
