@@ -2,16 +2,17 @@ class Solution {
 public:
     vector<int> sortArrayByParityII(vector<int>& nums) {
         int n = nums.size();
-        int i = 0, j = 1;
-        while (i < n && j < n) {
+        vector<int> a(n);
+        int j = 0, k = 1;
+        for (int i = 0; i < n; i++) {
             if (nums[i] % 2 == 0) {
-                i += 2;
-            } else if (nums[j] % 2 == 1) {
+                a[j] = nums[i];
                 j += 2;
-            } else {
-                swap(nums[i], nums[j]);
+            } else if (nums[i] % 2 != 0) {
+                a[k] = nums[i];
+                k += 2;
             }
         }
-        return nums;
+        return a;
     }
 };
