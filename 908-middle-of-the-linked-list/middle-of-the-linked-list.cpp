@@ -26,7 +26,7 @@ public:
         
 
         if (count % 2 != 0) {
-            int n = (count / 2)+1;//3
+            int n = (count / 2)+1;
             ListNode* temp = head;
             for (int i = 1; i <=n-1; i++) {
                 temp = temp->next;
