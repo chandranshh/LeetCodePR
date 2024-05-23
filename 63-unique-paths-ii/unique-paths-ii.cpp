@@ -29,6 +29,8 @@ public:
             for(int j = 1; j<n;j++){
                if (obstacleGrid[i][j] != 1){
                     dp[i][j]= dp[i-1][j]+dp[i][j-1];
+               }else{
+                    dp[i][j]=0;
                }
             }
         }
