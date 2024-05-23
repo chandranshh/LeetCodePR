@@ -12,7 +12,7 @@ public:
         for (int i = 0; i < m; i++) {
             if (obstacleGrid[i][0] != 1) {
                 dp[i][0] = 1;
-            }else{
+            } else {
                 break;
             }
         }
@@ -20,7 +20,7 @@ public:
         for (int i = 0; i < n; i++) {
             if (obstacleGrid[0][i] != 1) {
                 dp[0][i] = 1;
-            }else{
+            } else {
                 break;
             }
         }
