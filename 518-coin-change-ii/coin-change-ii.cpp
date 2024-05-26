@@ -4,7 +4,7 @@ public:
         int n = coins.size();
         vector<vector<int>> dp(n + 1, vector<int>(amount + 1, 0));
         
-        // Base case: 1 way to make change for amount 0
+       
         for (int i = 0; i <= n; i++) {
             dp[i][0] = 1;
         }
