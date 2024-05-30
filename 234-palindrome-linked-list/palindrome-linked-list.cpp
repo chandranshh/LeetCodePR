@@ -1,29 +1,56 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
+    ListNode* reverseLL(ListNode* head) {
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        ListNode* temp;
+
+        while (curr != NULL) {
+            temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = temp;
+        }
+        return prev;
+    }
+
     bool isPalindrome(ListNode* head) {
-        stack<int> st;
-        ListNode* temp = head;
-        while (temp != NULL) {
-            st.push(temp->val);
-            temp = temp->next;
+        if (head == NULL || head->next == NULL) {
+            return true;
         }
-        temp = head;
-        while (temp != NULL) {
-            if (st.top() != temp->val)
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* prevSlow = NULL;
+
+        while (fast != NULL && fast->next != NULL) {
+            prevSlow = slow;
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+
+        // If the list has odd number of nodes, move slow one step further
+        if (fast != NULL) {
+            prevSlow = slow;
+            slow = slow->next;
+        }
+
+        prevSlow->next = NULL; // Break the list into two parts
+
+        ListNode* newMiddle = reverseLL(slow);
+
+        ListNode* newFirst = head;
+
+        while (newMiddle != NULL) {
+            if (newMiddle->val != newFirst->val) {
                 return false;
-            temp = temp->next;
-            st.pop();
+            }
+            newMiddle = newMiddle->next;
+            newFirst = newFirst->next;
         }
+
+       
+
         return true;
     }
 };
