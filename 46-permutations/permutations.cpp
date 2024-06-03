@@ -4,6 +4,7 @@ public:
                          vector<vector<int>>& result) {
         if (start == end) {
             result.push_back(nums);
+            return;
         } else {
             for (int i = start; i <= end; i++) {
                 swap(nums[start], nums[i]);
