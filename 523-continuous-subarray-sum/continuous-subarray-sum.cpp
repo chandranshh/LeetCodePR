@@ -7,15 +7,13 @@ public:
         int sum = 0;
         for (int i = 0; i < n; i++) {
             sum += nums[i];
-            if (k != 0) {
-                sum %= k;
-            }
-            if (map.find(sum) != map.end()) {
-                if (i - map[sum] > 1) {
+            int rem = sum % k;
+            if (map.find(rem) != map.end()) {
+                if (i - map[rem] > 1) {
                     return true;
                 }
             } else {
-                map[sum] = i;
+                map[rem] = i;
             }
         }
         return false;
