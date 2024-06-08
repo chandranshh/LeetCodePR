@@ -12,14 +12,9 @@ public:
 
         if (n > threshold) {
             return -1;
-        };
-
-        int maxi = INT_MIN;
-
-        for (int i = 0; i < n; i++) {
-            maxi = max(maxi, nums[i]);
-            
         }
+
+        int maxi = *max_element(nums.begin(), nums.end());
 
         int low = 1, high = maxi;
         while (low <= high) {
