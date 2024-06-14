@@ -5,20 +5,17 @@ public:
             return nullptr;
         }
 
-        ListNode *slow = head;
-        ListNode *fast = head;
-        ListNode *temp = head;
+        ListNode* prev = nullptr;
+        ListNode* slow = head;
+        ListNode* fast = head;
 
-        while (fast && fast->next != nullptr) {
+        while (fast != nullptr && fast->next != nullptr) {
+            prev = slow;
             slow = slow->next;
             fast = fast->next->next;
         }
 
-        while (temp->next != slow) {
-            temp = temp->next;
-        }
-
-        temp->next = slow->next;
+        prev->next = slow->next;
 
         return head;
     }
