@@ -1,26 +1,46 @@
 class Solution {
-private:
-    void letterCombinations(string digits, vector<string>& output, string &temp, vector<string>& pad, int index){
-        if(index == digits.size()){
-            output.push_back(temp);
+public:
+    vector<string> result;
+
+    void solve(int idx, string& digits, string& temp,
+               unordered_map<char, string>& mp) {
+
+        if (idx >= digits.length()) {
+            result.push_back(temp);
             return;
         }
-        string value = pad[digits[index]-'0'];
-        for(int i=0; i<value.size(); i++){
-            temp.push_back(value[i]);
-            letterCombinations(digits, output, temp, pad, index+1);
+
+        char ch = digits[idx];
+        string str = mp[ch];
+
+        for (int i = 0; i < str.length(); i++) {
+
+            // Do
+            temp.push_back(str[i]);
+            solve(idx + 1, digits, temp, mp);
             temp.pop_back();
         }
     }
-public:
+
     vector<string> letterCombinations(string digits) {
-        if(digits.empty()){
+        if (digits.length() == 0)
             return {};
-        }
-        vector<string> pad = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        vector<string> output;
-        string temp;
-        letterCombinations(digits, output, temp, pad, 0);
-        return output;
+
+        unordered_map<char, string> mp;
+
+        mp['2'] = "abc";
+        mp['3'] = "def";
+        mp['4'] = "ghi";
+        mp['5'] = "jkl";
+        mp['6'] = "mno";
+        mp['7'] = "pqrs";
+        mp['8'] = "tuv";
+        mp['9'] = "wxyz";
+
+        string temp = "";
+
+        solve(0, digits, temp, mp);
+
+        return result;
     }
 };
