@@ -15,7 +15,6 @@ public:
 
         for (int i = 0; i < str.length(); i++) {
 
-            // Do
             temp.push_back(str[i]);
             solve(idx + 1, digits, temp, mp);
             temp.pop_back();
