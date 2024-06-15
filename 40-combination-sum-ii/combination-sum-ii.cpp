@@ -1,24 +1,26 @@
 class Solution {
 public:
     void findSum(int idx, int sum, vector<int>& ds, vector<vector<int>>& ans,
-                 vector<int>& candidates, int target) {
+                 const vector<int>& candidates, int target) {
         if (sum == target) {
             ans.push_back(ds);
             return;
         }
-        if (sum > target || idx >= candidates.size()) {
-            return;
-        }
 
-        ds.push_back(candidates[idx]);
-        findSum(idx + 1, sum + candidates[idx], ds, ans, candidates, target);
-        ds.pop_back();
+        for (int i = idx; i < candidates.size(); ++i) {
+            
+            if (i > idx && candidates[i] == candidates[i - 1]) {
+                continue;
+            }
 
-        while (idx + 1 < candidates.size() &&
-               candidates[idx] == candidates[idx + 1]) {
-            idx++;
+            if (sum + candidates[i] > target) {
+                break;
+            }
+
+            ds.push_back(candidates[i]);
+            findSum(i + 1, sum + candidates[i], ds, ans, candidates, target);
+            ds.pop_back();
         }
-        findSum(idx + 1, sum, ds, ans, candidates, target);
     }
 
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
