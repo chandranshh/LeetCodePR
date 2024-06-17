@@ -1,43 +1,36 @@
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
-
-using namespace std;
-
 class Solution {
 public:
     bool canCross(vector<int>& stones) {
 
-        unordered_set<int> stoneSet(stones.begin(), stones.end());
+        int n = stones.size();
+        if (stones[1] - stones[0] > 1)
+            return false;
 
-        unordered_map<int, unordered_map<int, bool>> memo;
+        if (stones.size() == 2)
+            return (stones[1] - stones[0] == 1);
 
-        return canCrossHelper(stones, stoneSet, memo, 0, 0);
+        vector<vector<int>> dp(n, vector<int>(n + 1, -1));
+
+        return func(1, 1, stones, dp);
     }
 
-private:
-    bool canCrossHelper(vector<int>& stones, unordered_set<int>& stoneSet,
-                        unordered_map<int, unordered_map<int, bool>>& memo,
-                        int currentPosition, int lastJump) {
-        if (currentPosition == stones.back()) {
+    bool func(int i, int jumps, vector<int>& stones, vector<vector<int>>& dp) {
+        if (i == stones.size() - 1)
             return true;
-        }
 
-        if (memo[currentPosition].count(lastJump)) {
-            return memo[currentPosition][lastJump];
-        }
+        if (dp[i][jumps] != -1)
+            return dp[i][jumps];
 
-        for (int jump = lastJump - 1; jump <= lastJump + 1; ++jump) {
-            if (jump > 0) {
-                int nextPosition = currentPosition + jump;
-                if (stoneSet.count(nextPosition)) {
-                    if (canCrossHelper(stones, stoneSet, memo, nextPosition,
-                                       jump)) {
-                        return memo[currentPosition][lastJump] = true;
-                    }
-                }
+        bool ans = false;
+        for (int ind = i + 1; ind < stones.size(); ind++) {
+            if (stones[ind] - stones[i] > jumps + 1)
+                break;
+            for (int t = -1; t < 2; t++) {
+                if (stones[ind] - stones[i] == jumps + t)
+                    ans = func(ind, jumps + t, stones, dp) || ans;
             }
         }
-        return memo[currentPosition][lastJump] = false;
+
+        return dp[i][jumps] = ans;
     }
 };
