@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool canCross(vector<int>& stones) {
-
         int n = stones.size();
         if (stones[1] - stones[0] > 1)
             return false;
@@ -21,16 +20,22 @@ public:
         if (dp[i][jumps] != -1)
             return dp[i][jumps];
 
-        dp[i][jumps] = false;
+        bool ans = false;
         for (int ind = i + 1; ind < stones.size(); ind++) {
             if (stones[ind] - stones[i] > jumps + 1)
                 break;
             for (int t = -1; t < 2; t++) {
-                if (stones[ind] - stones[i] == jumps + t)
-                    dp[i][jumps] = func(ind, jumps + t, stones, dp) || dp[i][jumps];
+                if (stones[ind] - stones[i] == jumps + t) {
+                    ans = func(ind, jumps + t, stones, dp);
+                    if (ans) {
+                        dp[i][jumps] = true;
+                        return true;
+                    }
+                }
             }
         }
 
-        return dp[i][jumps];
+        dp[i][jumps] = false; 
+        return false;
     }
 };
