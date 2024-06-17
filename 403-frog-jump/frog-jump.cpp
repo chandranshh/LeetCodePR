@@ -10,7 +10,7 @@ public:
 
         vector<vector<int>> dp(n, vector<int>(n + 1, -1));
 
-        return func(1, 1, stones, dp); 
+        return func(1, 1, stones, dp);
     }
 
     bool func(int i, int jumps, vector<int>& stones, vector<vector<int>>& dp) {
@@ -20,22 +20,17 @@ public:
         if (dp[i][jumps] != -1)
             return dp[i][jumps];
 
-        bool ans = false;
+        dp[i][jumps] = false;
         for (int ind = i + 1; ind < stones.size(); ind++) {
             if (stones[ind] - stones[i] > jumps + 1)
                 break;
             for (int t = -1; t < 2; t++) {
                 if (stones[ind] - stones[i] == jumps + t) {
-                    ans = func(ind, jumps + t, stones, dp);
-                    if (ans) {
-                        dp[i][jumps] = true;
-                        return true;
-                    }
+                    dp[i][jumps] = dp[i][jumps] || func(ind, jumps + t, stones, dp);
                 }
             }
         }
 
-        dp[i][jumps] = false; 
-        return false;
+        return dp[i][jumps];
     }
 };
