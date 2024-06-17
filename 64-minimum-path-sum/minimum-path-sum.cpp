@@ -20,7 +20,7 @@ public:
         int up = grid[i][j] + solve(i - 1, j, grid, dp);
 
         int left = grid[i][j] + solve(i, j - 1, grid, dp);
-        ;
+      
 
         return dp[i][j] = min(up, left);
     }
