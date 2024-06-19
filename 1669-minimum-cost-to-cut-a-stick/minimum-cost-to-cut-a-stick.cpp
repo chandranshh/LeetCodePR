@@ -1,32 +1,36 @@
+
 class Solution {
 public:
     int minCost(int n, vector<int>& cuts) {
+        cuts.push_back(n);
+        cuts.insert(cuts.begin(), 0);
         sort(cuts.begin(), cuts.end());
-        int m = cuts.size();
-        vector<vector<int>> dp(m, vector<int>(m, -1));
-        return helper(0, n, cuts, 0, m - 1, dp);
+        int c = cuts.size() - 2;
+        vector<vector<int>> dp(c + 1, vector<int>(c + 1, -1));
+        return findMinimumCost(1, c, cuts, dp);
     }
 
 private:
-    int helper(int left, int right, vector<int>& cuts, int start, int end, vector<vector<int>>& dp) {
-        if (start > end) {
+    int findMinimumCost(int i, int j, vector<int>& cuts,
+                        vector<vector<int>>& dp) {
+        if (i > j) {
             return 0;
         }
 
-        if (dp[start][end] != -1) {
-            return dp[start][end];
+        if (dp[i][j] != -1) {
+            return dp[i][j];
         }
 
-        int minCost = INT_MAX;
+        int mini = INT_MAX;
 
-        for (int i = start; i <= end; ++i) {
-            int cost = right - left;
-            int leftCost = helper(left, cuts[i], cuts, start, i - 1, dp);
-            int rightCost = helper(cuts[i], right, cuts, i + 1, end, dp);
-            minCost = min(minCost, cost + leftCost + rightCost);
+        for (int ind = i; ind <= j; ind++) {
+            int ans = cuts[j + 1] - cuts[i - 1] +
+                      findMinimumCost(i, ind - 1, cuts, dp) +
+                      findMinimumCost(ind + 1, j, cuts, dp);
+
+            mini = min(mini, ans);
         }
 
-        dp[start][end] = minCost;
-        return minCost;
+        return dp[i][j] = mini;
     }
 };
