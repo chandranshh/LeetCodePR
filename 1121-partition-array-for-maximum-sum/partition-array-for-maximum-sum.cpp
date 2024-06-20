@@ -1,9 +1,9 @@
 class Solution {
 public:
-    int maxSumAfterPartitioning(vector<int>& nums, int partitionSize) {
+    int maxSumAfterPartitioning(vector<int>& nums, int k) {
         int n = nums.size();
         vector<int> dp(n, -1);
-        return maxSumHelper(0, nums, partitionSize, dp);
+        return maxSumHelper(0, nums, k, dp);
     }
 
     int maxSumHelper(int startIndex, vector<int>& nums, int partitionSize,
