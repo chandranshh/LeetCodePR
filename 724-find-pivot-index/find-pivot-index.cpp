@@ -2,8 +2,8 @@ class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
         int n = nums.size();
-        vector<int> prefix(n, -1);
-        vector<int> suffix(n, -1);
+        vector<int> prefix(n, -1), suffix(n, -1);
+
         prefix[0] = nums[0];
         suffix[n - 1] = nums[n - 1];
         for (int i = 1; i < n; i++) {
