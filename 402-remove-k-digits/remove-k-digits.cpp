@@ -16,8 +16,9 @@ public:
             }
         }
 
-        while (!st.empty() && k--) {
+        while (!st.empty() && k > 0) {
             st.pop();
+            k--;
         }
 
         string result;
