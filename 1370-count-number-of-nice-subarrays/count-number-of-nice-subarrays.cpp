@@ -11,7 +11,7 @@ public:
         for (int i = 0; i < n; i++) {
             currSum += (nums[i] % 2); 
 
-            if (mp.count(currSum - k)) {
+            if (mp.find(currSum - k) != mp.end()) {
                 count += mp[currSum - k];
             }
 
