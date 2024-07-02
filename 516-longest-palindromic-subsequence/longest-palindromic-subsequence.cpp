@@ -1,38 +1,30 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
-    int lcs(string s1, string s2, int m, int n) {
-        int dp[m + 1][n + 1];
-
-        // base condition
-        for (int i = 0; i <= m; i++) {
-            for (int j = 0; j <= n; j++) {
-                if (i == 0 || j == 0) {
-                    dp[i][j] = 0;
-                }
-            }
+    int helper(int idx1, int idx2, string& text1, string& text2, vector<vector<int>>& dp) {
+        // base case
+        if (idx1 < 0 || idx2 < 0) {
+            return 0;
         }
-
-        // choice diagram
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (s1[i - 1] == s2[j - 1]) {
-                    dp[i][j] = 1 + dp[i - 1][j - 1];
-                } else {
-                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
-                }
-            }
+        // if already computed, return the stored value
+        if (dp[idx1][idx2] != -1) {
+            return dp[idx1][idx2];
         }
-
-        return dp[m][n];
+        // if current characters match
+        if (text1[idx1] == text2[idx2]) {
+            dp[idx1][idx2] = 1 + helper(idx1 - 1, idx2 - 1, text1, text2, dp);
+        } else { // if they don't match
+            dp[idx1][idx2] = max(helper(idx1, idx2 - 1, text1, text2, dp),
+                                 helper(idx1 - 1, idx2, text1, text2, dp));
+        }
+        return dp[idx1][idx2];
     }
 
     int longestPalindromeSubseq(string s) {
-        string rev_s = s;
-        reverse(rev_s.begin(), rev_s.end());
-
-        return lcs(s, rev_s, s.length(), s.length());
+        int n = s.size();
+        string rev = s;
+        reverse(rev.begin(), rev.end());
+        // create a DP table initialized with -1
+        vector<vector<int>> dp(n, vector<int>(n, -1));
+        return helper(n - 1, n - 1, s, rev, dp);
     }
 };
