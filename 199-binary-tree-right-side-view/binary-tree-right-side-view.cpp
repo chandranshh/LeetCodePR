@@ -16,7 +16,7 @@ public:
         vector<int> ans;
         if (!root)
             return ans;
-        map<int, int> mp;
+        // map<int, int> mp;
         queue<pair<TreeNode*, int>> q;
         q.push({root, 0});
         while (!q.empty()) {
@@ -27,23 +27,24 @@ public:
                 TreeNode* node = it.first;
                 q.pop();
 
-                if (mp.find(lvl) == mp.end()) {
-                    mp[lvl] = node->val;
+                // if (mp.find(lvl) == mp.end()) {
+                //     mp[lvl] = node->val;
+                // }
+                if (i == size - 1) {
+                    ans.push_back(node->val);
                 }
-
-                if (node->right != NULL) {
-                    q.push({node->right, lvl + 1});
-                }
-
                 if (node->left != NULL) {
                     q.push({node->left, lvl + 1});
+                }
+                if (node->right != NULL) {
+                    q.push({node->right, lvl + 1});
                 }
             }
         }
 
-        for (auto mpp : mp) {
-            ans.push_back(mpp.second);
-        }
+        // for (auto mpp : mp) {
+        //     ans.push_back(mpp.second);
+        // }
         return ans;
     }
 };
