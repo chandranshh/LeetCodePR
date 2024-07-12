@@ -1,20 +1,22 @@
 class Solution {
 public:
-    bool helper(vector<int>& nums, int idx, vector<int>& dp) {
-        if (idx >= nums.size() - 1) {
-            return true;
-        }
+    bool helper(vector<int>& nums, int idx, vector<int>& dp, int size) {
 
-        if (nums[idx] == 0) {
-            return false;
+        if (idx == size - 1) {
+            return true;
         }
 
         if (dp[idx] != -1) {
             return dp[idx];
         }
 
-        for (int jump = 1; jump <= nums[idx]; jump++) {
-            if (helper(nums, idx + jump, dp)) {
+        if (nums[idx] == 0) {
+            return dp[idx] = false;
+        }
+
+        for (int jump = 1; jump <= nums[idx]; ++jump) {
+
+            if (idx + jump < size && helper(nums, idx + jump, dp, size)) {
                 return dp[idx] = true;
             }
         }
@@ -24,9 +26,9 @@ public:
 
     bool canJump(vector<int>& nums) {
         int size = nums.size();
-        vector<int> dp(size+1, -1);
+        vector<int> dp(size, -1);
 
-        return helper(nums, 0, dp);
+        return helper(nums, 0, dp, size);
     }
 };
 
