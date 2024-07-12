@@ -1,29 +1,31 @@
 class Solution {
 public:
     int numberOfArithmeticSlices(vector<int>& nums) {
-        int size = nums.size();
-        if (size < 3) {
-            return 0;
+        if (nums.size() < 3) {
+            return 0; 
         }
-
-        int diff = nums[1] - nums[0];
-        int si = 1;
+        
         int count = 0;
-
-        for (int i = 2; i < size; i++) {
-            int curr_diff = nums[i] - nums[i - 1];
-            if (curr_diff == diff) {
-                si++;
-            } else {
-                diff = curr_diff;
-                si = 1;
-            }
-
-            if (si >= 2) {
-                count += si - 1;
-            }
-        }
-
+        helper(nums, nums.size() - 1, count);
         return count;
+    }
+    
+private:
+    int helper(vector<int>& nums, int end, int& count) {
+        if (end < 2) {
+            return 0; 
+        }
+        
+        int sliceEndingHere = 0;
+        
+    
+        if (nums[end] - nums[end - 1] == nums[end - 1] - nums[end - 2]) {
+            sliceEndingHere = 1 + helper(nums, end - 1, count);
+            count += sliceEndingHere;
+        } else {
+            helper(nums, end - 1, count);
+        }
+        
+        return sliceEndingHere;
     }
 };
