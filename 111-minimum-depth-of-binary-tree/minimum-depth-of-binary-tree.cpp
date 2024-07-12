@@ -14,32 +14,28 @@ class Solution {
 public:
     int minDepth(TreeNode* root) {
         if (!root)
-            return 0;
+            return 0; 
 
-        if (!root->left && !root->right)
-            return 1;
-
-        queue<TreeNode*> que;
-        que.push(root);
-        int depth = 1;
-
-        while (!que.empty()) {
-            int n = que.size();
-            while (n--) {
-
-                TreeNode* temp = que.front();
-                que.pop();
-
-                if (!temp->left && !temp->right)
-                    return depth;
-
-                if (temp->left)
-                    que.push(temp->left);
-                if (temp->right)
-                    que.push(temp->right);
-            }
-            depth++;
+        return helper(root);
+    }
+    
+    int helper(TreeNode* root) {
+       
+        if (!root->left && !root->right) {
+            return 1; 
         }
-        return -1;
+        
+        int left_depth = INT_MAX, right_depth = INT_MAX;
+        
+        if (root->left) {
+            left_depth = helper(root->left);
+        }
+        
+        if (root->right) {
+            right_depth = helper(root->right);
+        }
+        
+        // return the minimum depth of the subtree rooted at 'root'
+        return 1 + min(left_depth, right_depth);
     }
 };
