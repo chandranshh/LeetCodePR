@@ -1,66 +1,20 @@
 class Solution {
 public:
-    bool helper(vector<int>& nums, int idx, vector<int>& dp, int size) {
+    bool canJump(vector<int>& nums) {
+        int size = nums.size();
+        vector<bool> dp(size, false); 
+        dp[size - 1] = true;
 
-        if (idx == size - 1) {
-            return true;
-        }
 
-        if (dp[idx] != -1) {
-            return dp[idx];
-        }
-
-        if (nums[idx] == 0) {
-            return dp[idx] = false;
-        }
-
-        for (int jump = 1; jump <= nums[idx]; ++jump) {
-
-            if (idx + jump < size && helper(nums, idx + jump, dp, size)) {
-                return dp[idx] = true;
+        for (int i = size - 2; i >= 0; --i) {
+            for (int jump = 1; jump <= nums[i]; jump++) {
+                if (i + jump < size && dp[i + jump]) {
+                    dp[i] = true;
+                    break; 
+                }
             }
         }
 
-        return dp[idx] = false;
-    }
-
-    bool canJump(vector<int>& nums) {
-        int size = nums.size();
-        vector<int> dp(size, -1);
-
-        return helper(nums, 0, dp, size);
+        return dp[0];
     }
 };
-
-// giving tle
-//  class Solution {
-//  public:
-//      bool helper(vector<int>& nums, int size, int idx, vector<bool>& dp) {
-//          if (idx >= size) {
-//              return false;
-//          }
-
-//         if (idx == size - 1) {
-//             return true;
-//         }
-
-//         if (dp[idx] != false) {
-//             return dp[idx];
-//         }
-
-//         for (int i = 1; i <= nums[idx]; i++) {
-//             if (helper(nums, size, idx + i, dp)) {
-//                 dp[idx] = true;
-//             }
-//         }
-
-//         return dp[idx];
-//     }
-
-//     bool canJump(vector<int>& nums) {
-//         int size = nums.size();
-//         vector<bool> dp(size + 1, false);
-
-//         return helper(nums, size, 0, dp);
-//     }
-// };
