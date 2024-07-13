@@ -1,24 +1,33 @@
+struct Robot {
+    int position;
+    int health;
+    char direction;
+    int index;
+};
+
 class Solution {
 public:
     vector<int> survivedRobotsHealths(vector<int>& positions, vector<int>& healths, string directions) {
         int n = positions.size();
         vector<int> ans(n, -1);
-        vector<tuple<int, int, char, int>> robots; 
-        
+        vector<Robot> robots;
+
+       
         for (int i = 0; i < n; i++) {
             robots.push_back({positions[i], healths[i], directions[i], i});
         }
 
-       
-        sort(robots.begin(), robots.end());
+
+        sort(robots.begin(), robots.end(), [](const Robot& a, const Robot& b) {
+            return a.position < b.position;
+        });
 
         stack<pair<int, int>> st; 
-
         for (int i = 0; i < n; i++) {
-            int pos = get<0>(robots[i]);
-            int health = get<1>(robots[i]);
-            char dir = get<2>(robots[i]);
-            int index = get<3>(robots[i]);
+            int pos = robots[i].position;
+            int health = robots[i].health;
+            char dir = robots[i].direction;
+            int index = robots[i].index;
 
             if (dir == 'R') {
                 st.push({health, index});
@@ -46,12 +55,15 @@ public:
                 }
             }
         }
+
+      
         while (!st.empty()) {
             auto [r_health, r_index] = st.top();
             st.pop();
             ans[r_index] = r_health;
         }
 
+     
         vector<int> result;
         for (int h : ans) {
             if (h != -1) {
