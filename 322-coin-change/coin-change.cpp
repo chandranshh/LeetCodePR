@@ -12,15 +12,15 @@ public:
 
         int notTake = helper(idx - 1, coins, amount, dp);
 
-        int take = INT_MAX;
+        int mini = INT_MAX;
         if (coins[idx] <= amount) {
-            int result = helper(idx, coins, amount - coins[idx], dp);
-            if (result != INT_MAX) {
-                take = 1 + result;
+            int take = helper(idx, coins, amount - coins[idx], dp);
+            if (take != INT_MAX) {
+                mini = min(mini, 1 + take);
             }
         }
 
-        return dp[idx][amount] = min(take, notTake);
+        return dp[idx][amount] = min(mini, notTake);
     }
 
     int coinChange(vector<int>& coins, int amount) {
