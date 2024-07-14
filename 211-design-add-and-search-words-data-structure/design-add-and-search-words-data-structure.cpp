@@ -1,3 +1,5 @@
+#include <queue>
+
 struct TireNode {
     TireNode* childrens[26];
     bool flag = false;
@@ -28,26 +30,6 @@ class WordDictionary {
 private:
     TireNode* root;
 
-    bool searchInNode(string& word, TireNode* node, int index) {
-        if (index == word.size()) {
-            return node->isEnd();
-        }
-        char ch = word[index];
-        if (ch == '.') {
-            for (int i = 0; i < 26; i++) {
-                if (node->childrens[i] != nullptr && searchInNode(word, node->childrens[i], index + 1)) {
-                    return true;
-                }
-            }
-            return false;
-        } else {
-            if (!node->doesHave(ch)) {
-                return false;
-            }
-            return searchInNode(word, node->get(ch), index + 1);
-        }
-    }
-
 public:
     WordDictionary() {
         root = new TireNode();
@@ -65,7 +47,33 @@ public:
     }
 
     bool search(string word) {
-        return searchInNode(word, root, 0);
+        queue<pair<TireNode*, int>> q;
+        q.push({root, 0});
+        
+        while (!q.empty()) {
+            auto [node, index] = q.front();
+            q.pop();
+            
+            if (index == word.size()) {
+                if (node->isEnd()) return true;
+                continue;
+            }
+            
+            char ch = word[index];
+            if (ch == '.') {
+                for (int i = 0; i < 26; i++) {
+                    if (node->childrens[i] != nullptr) {
+                        q.push({node->childrens[i], index + 1});
+                    }
+                }
+            } else {
+                if (node->doesHave(ch)) {
+                    q.push({node->get(ch), index + 1});
+                }
+            }
+        }
+        
+        return false;
     }
 };
 
