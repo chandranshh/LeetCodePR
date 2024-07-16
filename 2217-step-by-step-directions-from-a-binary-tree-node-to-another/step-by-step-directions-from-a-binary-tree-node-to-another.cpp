@@ -23,19 +23,19 @@ public:
             return l;
         return root;
     }
-    bool dfs(TreeNode* root, int x, string& path, bool rev = 0) {
+    bool dfs(TreeNode* root, int x, string& path, bool reverse) {
         if (root == NULL)
             return 0;
         if (root->val == x)
             return 1;
 
-        path += (rev ? 'U' : 'L');
-        if (dfs(root->left, x, path, rev))
+        path += (reverse ? 'U' : 'L');
+        if (dfs(root->left, x, path, reverse))
             return 1;
         path.pop_back();
 
-        path += (rev ? 'U' : 'R');
-        if (dfs(root->right, x, path, rev))
+        path += (reverse ? 'U' : 'R');
+        if (dfs(root->right, x, path, reverse))
             return 1;
         path.pop_back();
 
@@ -45,7 +45,7 @@ public:
         root = LCA(root, startValue, destValue);
         string pathFrom = "", pathTo = "";
         dfs(root, startValue, pathFrom, 1);
-        dfs(root, destValue, pathTo);
+        dfs(root, destValue, pathTo, 0);
         return pathFrom + pathTo;
     }
 };
