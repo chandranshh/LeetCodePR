@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int lessequaltok(vector<int>& nums, int goal) {
+    int lessEqualToK(vector<int>& nums, int goal) {
         if (goal < 0) {
             return 0;
         }
@@ -25,6 +25,6 @@ public:
     }
 
     int numSubarraysWithSum(vector<int>& nums, int k) {
-        return lessequaltok(nums, k) - lessequaltok(nums, k - 1);
+        return lessEqualToK(nums, k) - lessEqualToK(nums, k - 1);
     }
 };
