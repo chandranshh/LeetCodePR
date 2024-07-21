@@ -10,17 +10,14 @@ private:
         int left = 0, right = 0;
         int size = s.size();
         int cnt = 0;
-        int validSubstrings = 0;
 
         while (right < size) {
             mp[s[right]]++;
             while (mp['a'] > 0 && mp['b'] > 0 && mp['c'] > 0) {
-                validSubstrings++;
+                cnt += size - right;
                 mp[s[left]]--;
                 left++;
             }
-            cnt += validSubstrings;
-
             right++;
         }
         return cnt;
