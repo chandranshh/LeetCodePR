@@ -14,9 +14,7 @@ public:
                 }
                 left++;
             }
-            if (ump.size() <= 2) {
-                maxi = max(maxi, right - left + 1);
-            }
+            maxi = max(maxi, right - left + 1);
             right++;
         }
         return maxi;
