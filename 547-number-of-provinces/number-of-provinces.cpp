@@ -25,6 +25,7 @@ private:
             for (int j = 1; j <= n; ++j) {
                 if (adjMatrix[i - 1][j - 1] == 1 && i != j) { 
                     adjList[i].push_back(j);
+                    adjList[j].push_back(i);
                 }
             }
         }
