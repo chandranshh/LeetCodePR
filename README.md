@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 ## Graph
 |  |
 | ------- |
@@ -68,4 +69,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
+## String
+|  |
+| ------- |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 <!---LeetCode Topics End-->
