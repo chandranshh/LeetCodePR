@@ -13,7 +13,7 @@ public:
             int len = max(len1, len2);
             
             if (len > maxLen) {
-                maxLen = len;
+                maxLen = max(maxLen, len);
                 start = i - (len - 1) / 2;
             }
         }
