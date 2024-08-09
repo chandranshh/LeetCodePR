@@ -60,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
@@ -73,6 +74,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+## Two Pointers
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
