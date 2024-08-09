@@ -1,29 +1,30 @@
 class Solution {
 public:
-    int longestPalindromeSubseq(string s) {
-        int size = s.size();
-        vector<vector<int>> dp(size, vector<int>(size, -1));
-        string s_rev = s;
-        reverse(s_rev.begin(), s_rev.end());
-        return lcs(s, s_rev, size - 1, size - 1, dp);
-    }
-
-private:
-    int lcs(string s1, string s2, int i, int j, vector<vector<int>>& dp) {
-        if (i < 0 || j < 0) {
+    int helper(int idx1, int idx2, string& text1, string& text2, vector<vector<int>>& dp) {
+        // base case
+        if (idx1 < 0 || idx2 < 0) {
             return 0;
         }
-
-        if (dp[i][j] != -1) {
-            return dp[i][j];
+        // if already computed, return the stored value
+        if (dp[idx1][idx2] != -1) {
+            return dp[idx1][idx2];
         }
-
-        if (s1[i] == s2[j]) {
-            dp[i][j] = 1 + lcs(s1, s2, i - 1, j - 1, dp);
-        }else{
-            dp[i][j] = max(lcs(s1, s2, i - 1, j, dp), lcs(s1, s2, i, j - 1, dp));
+        // if current characters match
+        if (text1[idx1] == text2[idx2]) {
+            dp[idx1][idx2] = 1 + helper(idx1 - 1, idx2 - 1, text1, text2, dp);
+        } else { // if they don't match
+            dp[idx1][idx2] = max(helper(idx1, idx2 - 1, text1, text2, dp),
+                                 helper(idx1 - 1, idx2, text1, text2, dp));
         }
-        
-        return dp[i][j];
+        return dp[idx1][idx2];
+    }
+
+    int longestPalindromeSubseq(string s) {
+        int n = s.size();
+        string rev = s;
+        reverse(rev.begin(), rev.end());
+        // create a DP table initialized with -1
+        vector<vector<int>> dp(n, vector<int>(n, -1));
+        return helper(n - 1, n - 1, s, rev, dp);
     }
 };
