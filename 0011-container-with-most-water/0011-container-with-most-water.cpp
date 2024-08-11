@@ -1,3 +1,6 @@
+#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 class Solution {
 public:
     int maxArea(vector<int>& height) {
