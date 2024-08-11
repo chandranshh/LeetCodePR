@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
@@ -84,6 +85,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0125-valid-palindrome](https://github.com/chandranshh/LeetCodePR/tree/master/0125-valid-palindrome) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
