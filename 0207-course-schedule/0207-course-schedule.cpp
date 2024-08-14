@@ -38,7 +38,7 @@ public:
 
         for (int node = 0; node < numCourses; node++) {
             if (indegree[node] != 0) {
-                return false;
+                return false; //because in case of a cyclic graphs there would be some node whose indegree wont be equal to zero 
             }
         }
 
