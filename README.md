@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
@@ -105,4 +106,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0207-course-schedule](https://github.com/chandranshh/LeetCodePR/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0210-course-schedule-ii) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
