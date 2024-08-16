@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/chandranshh/LeetCodePR/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/chandranshh/LeetCodePR/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/chandranshh/LeetCodePR/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/chandranshh/LeetCodePR/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
@@ -81,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0210-course-schedule-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/chandranshh/LeetCodePR/tree/master/0310-minimum-height-trees) |
 | [0801-is-graph-bipartite](https://github.com/chandranshh/LeetCodePR/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/chandranshh/LeetCodePR/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
@@ -112,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/chandranshh/LeetCodePR/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/chandranshh/LeetCodePR/tree/master/0310-minimum-height-trees) |
+| [0820-find-eventual-safe-states](https://github.com/chandranshh/LeetCodePR/tree/master/0820-find-eventual-safe-states) |
 ## Binary Search
 |  |
 | ------- |
