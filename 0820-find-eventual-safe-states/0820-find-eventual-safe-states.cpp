@@ -7,10 +7,10 @@ public:
         queue<int> q;
         vector<int> result;
 
-        for (int i = 0; i < n; ++i) {
-            for (int neighbor : graph[i]) {
-                reverseGraph[neighbor].push_back(i);
-                inDegree[i]++;
+        for (int u = 0; u < n; ++u) {
+            for (int v : graph[u]) {
+                reverseGraph[v].push_back(u);
+                inDegree[u]++;
             }
         }
 
