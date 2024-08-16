@@ -84,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
+| [1916-find-center-of-star-graph](https://github.com/chandranshh/LeetCodePR/tree/master/1916-find-center-of-star-graph) |
 ## String
 |  |
 | ------- |
