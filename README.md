@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Matrix
 |  |
 | ------- |
@@ -61,6 +62,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Union Find
 |  |
 | ------- |
@@ -78,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0583-delete-operation-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Graph
 |  |
 | ------- |
@@ -91,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1916-find-center-of-star-graph](https://github.com/chandranshh/LeetCodePR/tree/master/1916-find-center-of-star-graph) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## String
 |  |
 | ------- |
