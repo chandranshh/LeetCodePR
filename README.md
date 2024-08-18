@@ -139,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0263-ugly-number](https://github.com/chandranshh/LeetCodePR/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 ## Heap (Priority Queue)
 |  |
