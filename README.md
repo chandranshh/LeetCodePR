@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
+| [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0583-delete-operation-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0583-delete-operation-for-two-strings) |
@@ -131,4 +132,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
+## Hash Table
+|  |
+| ------- |
+| [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+## Math
+|  |
+| ------- |
+| [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 <!---LeetCode Topics End-->
