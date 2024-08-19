@@ -80,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0583-delete-operation-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
+| [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Graph
@@ -141,6 +142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0263-ugly-number](https://github.com/chandranshh/LeetCodePR/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+| [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
