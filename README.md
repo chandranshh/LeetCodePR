@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
+| [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 ## Breadth-First Search
 |  |
@@ -93,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0820-find-eventual-safe-states](https://github.com/chandranshh/LeetCodePR/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/chandranshh/LeetCodePR/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
+| [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1916-find-center-of-star-graph](https://github.com/chandranshh/LeetCodePR/tree/master/1916-find-center-of-star-graph) |
@@ -137,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+| [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 ## Math
 |  |
 | ------- |
