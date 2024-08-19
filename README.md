@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Matrix
@@ -62,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Union Find
@@ -72,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0801-is-graph-bipartite](https://github.com/chandranshh/LeetCodePR/tree/master/0801-is-graph-bipartite) |
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -96,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0922-possible-bipartition](https://github.com/chandranshh/LeetCodePR/tree/master/0922-possible-bipartition) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 | [1120-flower-planting-with-no-adjacent](https://github.com/chandranshh/LeetCodePR/tree/master/1120-flower-planting-with-no-adjacent) |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/chandranshh/LeetCodePR/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1916-find-center-of-star-graph](https://github.com/chandranshh/LeetCodePR/tree/master/1916-find-center-of-star-graph) |
 | [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
@@ -150,4 +154,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+## Tree
+|  |
+| ------- |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
+## Binary Tree
+|  |
+| ------- |
+| [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
 <!---LeetCode Topics End-->
