@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
+| [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -86,6 +87,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
 | [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+| [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 | [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/chandranshh/LeetCodePR/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Graph
 |  |
@@ -150,6 +152,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0263-ugly-number](https://github.com/chandranshh/LeetCodePR/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
+| [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -162,4 +165,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1275-validate-binary-tree-nodes](https://github.com/chandranshh/LeetCodePR/tree/master/1275-validate-binary-tree-nodes) |
+## Prefix Sum
+|  |
+| ------- |
+| [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
+## Game Theory
+|  |
+| ------- |
+| [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 <!---LeetCode Topics End-->
