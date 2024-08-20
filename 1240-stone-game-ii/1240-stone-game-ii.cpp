@@ -1,8 +1,6 @@
 class Solution {
 public:
-    int dp[100][100];
-
-    int helper(int index, int M, const vector<int>& piles) {
+    int helper(int index, int M, const vector<int>& piles, vector<vector<int>>& dp) {
         if (M * 2 >= piles.size() - index) {
             int totalStones = 0;
             for (int i = index; i < piles.size(); ++i) {
@@ -29,7 +27,7 @@ public:
                     remainingStones += piles[i];
                 }
 
-                maxStones = max(maxStones, stonesTaken + remainingStones - helper(index + x, max(M, x), piles));
+                maxStones = max(maxStones, stonesTaken + remainingStones - helper(index + x, max(M, x), piles, dp));
             }
         }
 
@@ -37,7 +35,7 @@ public:
     }
 
     int stoneGameII(vector<int>& piles) {
-        memset(dp, -1, sizeof(dp));
-        return helper(0, 1, piles);
+        vector<vector<int>> dp(100, vector<int>(100, -1));
+        return helper(0, 1, piles, dp);
     }
 };
