@@ -1,41 +1,32 @@
 class Solution {
 public:
-    int helper(int index, int M, const vector<int>& piles, vector<vector<int>>& dp) {
-        if (M * 2 >= piles.size() - index) {
-            int totalStones = 0;
-            for (int i = index; i < piles.size(); ++i) {
-                totalStones += piles[i];
-            }
-            return totalStones;
-        }
-
-        if (dp[index][M] != -1) {
-            return dp[index][M];
-        }
-
-        int maxStones = 0;
-
-        for (int x = 1; x <= 2 * M; ++x) {
-            if (index + x <= piles.size()) {
-                int stonesTaken = 0;
-                for (int i = index; i < index + x; ++i) {
-                    stonesTaken += piles[i];
-                }
-
-                int remainingStones = 0;
-                for (int i = index + x; i < piles.size(); ++i) {
-                    remainingStones += piles[i];
-                }
-
-                maxStones = max(maxStones, stonesTaken + remainingStones - helper(index + x, max(M, x), piles, dp));
+    int solveForAlice(vector<int>& piles, vector<vector<vector<int>>>& dp, int person, int i, int M, int n) {
+        if (i >= n)
+            return 0;
+        
+        if (dp[person][i][M] != -1)
+            return dp[person][i][M];
+        
+        int result = (person == 1) ? -1 : INT_MAX;
+        int stones = 0;
+        
+        for (int x = 1; x <= min(2 * M, n - i); x++) {
+            stones += piles[i + x - 1];
+            
+            if (person == 1) { // Alice
+                result = max(result, stones + solveForAlice(piles, dp, 0, i + x, max(M, x), n));
+            } else { // Bob
+                result = min(result, solveForAlice(piles, dp, 1, i + x, max(M, x), n));
             }
         }
-
-        return dp[index][M] = maxStones;
+        
+        return dp[person][i][M] = result;
     }
-
+    
     int stoneGameII(vector<int>& piles) {
-        vector<vector<int>> dp(100, vector<int>(100, -1));
-        return helper(0, 1, piles, dp);
+        int n = piles.size();
+        vector<vector<vector<int>>> dp(2, vector<vector<int>>(n + 1, vector<int>(n + 1, -1)));
+        
+        return solveForAlice(piles, dp, 1, 0, 1, n);
     }
 };
