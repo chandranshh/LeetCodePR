@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
@@ -142,6 +143,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -150,6 +152,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 ## Math
 |  |
@@ -157,6 +160,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0263-ugly-number](https://github.com/chandranshh/LeetCodePR/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 | [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
 | [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 ## Heap (Priority Queue)
@@ -183,4 +187,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0813-all-paths-from-source-to-target](https://github.com/chandranshh/LeetCodePR/tree/master/0813-all-paths-from-source-to-target) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
+## Sorting
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
