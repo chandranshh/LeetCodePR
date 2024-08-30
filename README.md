@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
+| [0485-max-consecutive-ones](https://github.com/chandranshh/LeetCodePR/tree/master/0485-max-consecutive-ones) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
