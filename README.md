@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
+| [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
@@ -124,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
 | [0125-valid-palindrome](https://github.com/chandranshh/LeetCodePR/tree/master/0125-valid-palindrome) |
+| [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
 ## Greedy
 |  |
@@ -152,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0263-ugly-number](https://github.com/chandranshh/LeetCodePR/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/chandranshh/LeetCodePR/tree/master/0650-2-keys-keyboard) |
