@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/chandranshh/LeetCodePR/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
+| [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/chandranshh/LeetCodePR/tree/master/0075-sort-colors) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
@@ -87,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
+| [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
@@ -152,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
+| [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 ## Hash Table
 |  |
 | ------- |
