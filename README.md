@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
 | [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -136,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0125-valid-palindrome](https://github.com/chandranshh/LeetCodePR/tree/master/0125-valid-palindrome) |
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Greedy
 |  |
 | ------- |
@@ -206,4 +208,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0075-sort-colors](https://github.com/chandranshh/LeetCodePR/tree/master/0075-sort-colors) |
 | [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
+## Simulation
+|  |
+| ------- |
+| [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
 <!---LeetCode Topics End-->
