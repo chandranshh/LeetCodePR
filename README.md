@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/chandranshh/LeetCodePR/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
+| [0015-3sum](https://github.com/chandranshh/LeetCodePR/tree/master/0015-3sum) |
 | [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/chandranshh/LeetCodePR/tree/master/0075-sort-colors) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/chandranshh/LeetCodePR/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -133,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/chandranshh/LeetCodePR/tree/master/0011-container-with-most-water) |
+| [0015-3sum](https://github.com/chandranshh/LeetCodePR/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/chandranshh/LeetCodePR/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/chandranshh/LeetCodePR/tree/master/0125-valid-palindrome) |
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
@@ -206,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/chandranshh/LeetCodePR/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/chandranshh/LeetCodePR/tree/master/0075-sort-colors) |
 | [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 ## Simulation
