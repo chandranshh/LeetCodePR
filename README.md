@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/chandranshh/LeetCodePR/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/chandranshh/LeetCodePR/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0130-surrounded-regions](https://github.com/chandranshh/LeetCodePR/tree/master/0130-surrounded-regions) |
+| [0152-maximum-product-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0152-maximum-product-subarray) |
 | [0189-rotate-array](https://github.com/chandranshh/LeetCodePR/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
@@ -97,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/chandranshh/LeetCodePR/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0152-maximum-product-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0152-maximum-product-subarray) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
