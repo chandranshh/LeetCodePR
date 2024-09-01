@@ -1,5 +1,13 @@
 class Solution {
 public:
+    bool canEat(int k, int size, int h, vector<int>& piles) {
+        long totalTime = 0;
+        for (int i = 0; i < size; i++) {
+            totalTime += ceil((double)(piles[i]) / k);
+        }
+        return totalTime <= h;
+    }
+    
     int minEatingSpeed(vector<int>& piles, int h) {
         int maxi = *max_element(piles.begin(), piles.end());
         int n = piles.size();
@@ -17,14 +25,5 @@ public:
         }
 
         return result;
-    }
-
-private:
-    bool canEat(int k, int size, int h, vector<int>& piles) {
-        long totalTime = 0;
-        for (int i = 0; i < size; i++) {
-            totalTime += ceil((double)(piles[i]) / k);
-        }
-        return totalTime <= h;
     }
 };
