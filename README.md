@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0485-max-consecutive-ones](https://github.com/chandranshh/LeetCodePR/tree/master/0485-max-consecutive-ones) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
+| [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
@@ -218,4 +219,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
+## Sliding Window
+|  |
+| ------- |
+| [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
 <!---LeetCode Topics End-->
