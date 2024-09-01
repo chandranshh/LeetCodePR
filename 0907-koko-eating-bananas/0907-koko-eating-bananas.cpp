@@ -20,7 +20,7 @@ public:
     }
 
 private:
-    inline bool canEat(int k, int size, int h, vector<int>& piles) {
+    bool canEat(int k, int size, int h, vector<int>& piles) {
         long totalTime = 0;
         for (int i = 0; i < size; i++) {
             totalTime += ceil((double)(piles[i]) / k);
