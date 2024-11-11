@@ -1,32 +1,37 @@
 class Solution {
 public:
-    int findRow(vector<vector<int>>& mat, int col, int m, int n) {
-        int maxi = -1;
-        int index = -1;
-        for (int i = 0; i < n; i++) {
-            if (mat[i][col] > maxi) {
-                maxi = mat[i][col];
-                index = i;
+    vector<int> findPeakGrid(vector<vector<int>>& mat) {
+        int m = mat.size();
+        int n = mat[0].size();
+        int low = 0, high = n - 1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            int maxRow = 0;
+
+            for (int i = 0; i < m; ++i) {
+                if (mat[i][mid] > mat[maxRow][mid]) {
+                    maxRow = i;
+                }
+            }
+
+            bool isLeftBig =
+                (mid > 0) && (mat[maxRow][mid - 1] > mat[maxRow][mid]);
+            bool isRightBig =
+                (mid < n - 1) && (mat[maxRow][mid + 1] > mat[maxRow][mid]);
+
+            if (!isLeftBig && !isRightBig) {
+
+                return {maxRow, mid};
+            } else if (isRightBig) {
+
+                low = mid + 1;
+            } else {
+
+                high = mid - 1;
             }
         }
-        return index;
-    }
-    vector<int> findPeakGrid(vector<vector<int>>& mat) {
-        int n = mat.size();
-        int m = mat[0].size();
-        int low = 0, high = m - 1;
-        while (low <= high) {
-            int midcol = low + (high - low) / 2;
-            int midrow = findRow(mat, midcol, m, n);
-            int left = midcol - 1 >= low ? mat[midrow][midcol - 1] : -1;
-            int right = midcol < high ? mat[midrow][midcol + 1] : -1;
-            if (mat[midrow][midcol] > left && mat[midrow][midcol] > right)
-                return {midrow, midcol};
-            else if (mat[midrow][midcol] < left)
-                high = midcol - 1;
-            else
-                low = midcol + 1;
-        }
+
         return {-1, -1};
     }
 };
