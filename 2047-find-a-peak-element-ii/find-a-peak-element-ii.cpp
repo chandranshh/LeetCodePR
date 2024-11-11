@@ -15,20 +15,25 @@ public:
                 }
             }
 
-            bool isLeftBig =
-                (mid > 0) && (mat[maxRow][mid - 1] > mat[maxRow][mid]);
-            bool isRightBig =
-                (mid < n - 1) && (mat[maxRow][mid + 1] > mat[maxRow][mid]);
+            bool isLeftBig = false;
+            bool isRightBig = false;
+
+            if (mid > 0 && mat[maxRow][mid - 1] > mat[maxRow][mid]) {
+                isLeftBig = true;
+            }
+
+            if (mid < n - 1 && mat[maxRow][mid + 1] > mat[maxRow][mid]) {
+                isRightBig = true;
+            }
 
             if (!isLeftBig && !isRightBig) {
-
                 return {maxRow, mid};
-            } else if (isRightBig) {
-
-                low = mid + 1;
             } else {
-
-                high = mid - 1;
+                if (isRightBig) {
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
             }
         }
 
