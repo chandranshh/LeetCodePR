@@ -15,22 +15,20 @@ public:
         ListNode* temp = dummy;
         int carry = 0;
 
-        while (l1 != NULL || l2 != NULL || carry) {
+        while(l1 || l2 || carry){
             int sum = carry;
-
-            if (l1 != NULL) {
-                sum += l1->val;
+            if(l1){
+                sum+=l1->val;
                 l1 = l1->next;
             }
-
-            if (l2 != NULL) {
-                sum += l2->val;
+            if(l2){
+                sum+=l2->val;
                 l2 = l2->next;
             }
 
-            temp->next = new ListNode{sum % 10, nullptr};
-            carry = sum / 10;
+            temp->next = new ListNode{sum%10, nullptr};
             temp = temp->next;
+            carry = sum /10;
         }
 
         if(carry){
