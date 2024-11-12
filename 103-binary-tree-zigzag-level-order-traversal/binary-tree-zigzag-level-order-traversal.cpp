@@ -15,31 +15,38 @@ public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         queue<TreeNode*> q;
         vector<vector<int>> ans;
-        if (root == NULL) {
-            return ans;
-        }
-        bool leftToRight = true;
+
+        if (!root)
+            return {};
+
         q.push(root);
+        bool right = true;
+
         while (!q.empty()) {
             int size = q.size();
-            vector<int> level(size);
-            for (int i = 0; i < size; i++) {
-                TreeNode* temp = q.front();
+            vector<int>levelElements(size);
+
+            for(int i = 0; i < size; i++){
+                TreeNode* node = q.front();
                 q.pop();
-                int index = i;
-                if (!leftToRight){
-                    index = size - 1 - i;
+
+                if(node->left){
+                    q.push(node->left);
                 }
-                if (temp->left != NULL) {
-                    q.push(temp->left);
+
+                if(node->right){
+                    q.push(node->right);
                 }
-                if (temp->right != NULL) {
-                    q.push(temp->right);
+
+                if(right){
+                    levelElements[i] = node->val;
+                    
+                }else{
+                    levelElements[size-i-1] = node->val;
                 }
-                level[index] = temp->val;
             }
-            leftToRight = !leftToRight;
-            ans.push_back(level);
+            ans.push_back(levelElements);
+            right = !right;
         }
         return ans;
     }
