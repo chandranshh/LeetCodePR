@@ -104,6 +104,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0053-maximum-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/chandranshh/LeetCodePR/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0131-palindrome-partitioning](https://github.com/chandranshh/LeetCodePR/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/chandranshh/LeetCodePR/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/chandranshh/LeetCodePR/tree/master/0198-house-robber) |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
@@ -138,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/chandranshh/LeetCodePR/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/chandranshh/LeetCodePR/tree/master/0006-zigzag-conversion) |
 | [0125-valid-palindrome](https://github.com/chandranshh/LeetCodePR/tree/master/0125-valid-palindrome) |
+| [0131-palindrome-partitioning](https://github.com/chandranshh/LeetCodePR/tree/master/0131-palindrome-partitioning) |
 | [0516-longest-palindromic-subsequence](https://github.com/chandranshh/LeetCodePR/tree/master/0516-longest-palindromic-subsequence) |
 | [0583-delete-operation-for-two-strings](https://github.com/chandranshh/LeetCodePR/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/chandranshh/LeetCodePR/tree/master/0647-palindromic-substrings) |
@@ -219,6 +221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [0131-palindrome-partitioning](https://github.com/chandranshh/LeetCodePR/tree/master/0131-palindrome-partitioning) |
 | [0813-all-paths-from-source-to-target](https://github.com/chandranshh/LeetCodePR/tree/master/0813-all-paths-from-source-to-target) |
 ## Bit Manipulation
 |  |
