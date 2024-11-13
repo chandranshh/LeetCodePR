@@ -13,9 +13,12 @@ public:
             res.push_back(path);
             return;
         }
+
+        string currentSubstring = "";
         for (int i = index; i < s.size(); ++i) {
+            currentSubstring += s[i];
             if (isPalindrome(s, index, i)) {
-                path.push_back(s.substr(index, i - index + 1));
+                path.push_back(currentSubstring);
                 partitionHelper(i + 1, s, path, res);
                 path.pop_back();
             }
