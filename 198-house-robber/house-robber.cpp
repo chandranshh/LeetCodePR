@@ -1,19 +1,25 @@
 class Solution {
 public:
-    int rob(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> dp(n, 0);
-
-        dp[0] = nums[0];
-
-        for (int i = 1; i < n; i++) {
-            if (i > 1) {
-                dp[i] = max(dp[i - 1], nums[i] + dp[i - 2]);
-            } else {
-                dp[i] = max(dp[i - 1], nums[i]);
-            }
+    int thief(vector<int>& nums, int idx, vector<int>& dp) {
+        if (idx >= nums.size()) {
+            return 0;
+        }
+        
+        if (dp[idx] != -1) {
+            return dp[idx];
         }
 
-        return dp[n - 1];
+        int pick = nums[idx] + thief(nums, idx + 2, dp);
+        int notPick = thief(nums, idx + 1, dp);
+
+        return dp[idx] = max(pick, notPick);
+    }
+
+    int rob(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> dp(n, -1);
+        int ans = thief(nums, 0, dp);
+
+        return ans;
     }
 };
