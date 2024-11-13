@@ -1,31 +1,33 @@
 class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
-        int n = asteroids.size();
         stack<int> st;
-        for (int i = 0; i < n; i++) {
-            if (asteroids[i] > 0 || st.empty()) {
-                st.push(asteroids[i]);
-            } else {
-                while (!st.empty() && st.top() > 0 &&
-                       st.top() < abs(asteroids[i])) {
-                    st.pop();
+        
+        for (int asteroid : asteroids) {
+            bool pushAsteroid = true;
+            
+            while (!st.empty() && asteroid < 0 && st.top() > 0) {
+                if (st.top() < -asteroid) {
+                    st.pop(); // Top asteroid explodes
+                    continue; // Continue to check the next top of the stack
+                } else if (st.top() == -asteroid) {
+                    st.pop(); // Both asteroids explode
                 }
-                if (!st.empty() && st.top() == abs(asteroids[i])) {
-                    st.pop();
-                } else if (st.empty() || st.top() < 0) {
-                    st.push(asteroids[i]);
-                }
+                pushAsteroid = false; // Current asteroid explodes
+                break;
+            }
+            
+            if (pushAsteroid) {
+                st.push(asteroid);
             }
         }
 
-        // finally we are returning the elements which remains in the stack. we
-        // have to return them in reverse order.
-        vector<int> res(st.size());
-        for (int i = (int)st.size() - 1; i >= 0; i--) {
-            res[i] = st.top();
+        vector<int> result(st.size());
+        for (int i = st.size() - 1; i >= 0; i--) {
+            result[i] = st.top();
             st.pop();
         }
-        return res;
+        
+        return result;
     }
 };
