@@ -6,9 +6,9 @@ public:
         int val;
         node* next;
         node* prev;
-        node(int _key, int _val) {
-            key = _key;
-            val = _val;
+        node(int key, int val) {
+            this->key = key;
+            this->val = val;
         }
     };
 
