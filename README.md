@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
+| [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 | [0907-koko-eating-bananas](https://github.com/chandranshh/LeetCodePR/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
@@ -233,9 +234,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Sliding Window
 |  |
 | ------- |
 | [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
+## Stack
+|  |
+| ------- |
+| [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 <!---LeetCode Topics End-->
