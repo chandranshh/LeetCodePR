@@ -1,5 +1,29 @@
 class Solution {
 public:
+    bool partitionHelper(int idx, int target, vector<int>& nums, int n,
+                         vector<vector<int>>& dp) {
+        if (target == 0) {
+            return true;
+        }
+
+        if (idx == n) {
+            return false;
+        }
+
+        if (dp[idx][target] != -1) {
+            return dp[idx][target];
+        }
+
+        bool notTaken = partitionHelper(idx + 1, target, nums, n, dp);
+        bool taken = false;
+        if (nums[idx] <= target) {
+            taken = partitionHelper(idx + 1, target - nums[idx], nums, n, dp);
+        }
+
+        dp[idx][target] = taken || notTaken;
+        return dp[idx][target];
+    }
+
     bool canPartition(vector<int>& nums) {
         int n = nums.size();
         int sum = accumulate(nums.begin(), nums.end(), 0);
@@ -9,22 +33,7 @@ public:
         }
 
         int target = sum / 2;
-
-        vector<vector<bool>> dp(n + 1, vector<bool>(target + 1, false));
-
-        for (int i = 0; i <= n; i++) {
-            dp[i][0] = true;
-        }
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= target; j++) {
-                if (j < nums[i - 1]) {
-                    dp[i][j] = dp[i - 1][j];
-                } else {
-                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - nums[i - 1]];
-                }
-            }
-        }
-        return dp[n][target];
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, -1));
+        return partitionHelper(0, target, nums, n, dp);
     }
 };
