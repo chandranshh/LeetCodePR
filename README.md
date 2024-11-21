@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/chandranshh/LeetCodePR/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/chandranshh/LeetCodePR/tree/master/2343-count-unguarded-cells-in-the-grid) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -69,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/chandranshh/LeetCodePR/tree/master/1073-number-of-enclaves) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/chandranshh/LeetCodePR/tree/master/2343-count-unguarded-cells-in-the-grid) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -243,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/chandranshh/LeetCodePR/tree/master/2343-count-unguarded-cells-in-the-grid) |
 ## Sliding Window
 |  |
 | ------- |
