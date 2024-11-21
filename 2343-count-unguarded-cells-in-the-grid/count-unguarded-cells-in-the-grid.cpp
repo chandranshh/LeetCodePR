@@ -15,23 +15,29 @@ public:
 
         vector<pair<int, int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
+        queue<pair<int, int>> q;
         for (auto& guard : guards) {
-            int startX = guard[0];
-            int startY = guard[1];
+            q.push({guard[0], guard[1]});
+        }
+
+        while (!q.empty()) {
+            auto [x, y] = q.front();
+            q.pop();
+
             for (auto [dx, dy] : directions) {
-                queue<pair<int, int>> q;
-                q.push({startX, startY});
+                int nx = x + dx, ny = y + dy;
+                queue<pair<int, int>> dirQueue;
+                dirQueue.push({nx, ny});
 
-                while (!q.empty()) {
-                    auto [x, y] = q.front();
-                    q.pop();
+                while (!dirQueue.empty()) {
+                    auto [cx, cy] = dirQueue.front();
+                    dirQueue.pop();
 
-                    int nx = x + dx, ny = y + dy;
-                    if (nx >= 0 && nx < m && ny >= 0 && ny < n &&
-                        grid[nx][ny] != 'W' && grid[nx][ny] != 'G') {
-                        if (grid[nx][ny] == '.') {
-                            guarded[nx][ny] = true;
-                            q.push({nx, ny});
+                    if (cx >= 0 && cx < m && cy >= 0 && cy < n &&
+                        grid[cx][cy] != 'W' && grid[cx][cy] != 'G') {
+                        if (grid[cx][cy] == '.') {
+                            guarded[cx][cy] = true;
+                            dirQueue.push({cx + dx, cy + dy});
                         }
                     } else {
                         break;
@@ -48,6 +54,7 @@ public:
                 }
             }
         }
+
         return count;
     }
 };
