@@ -13,26 +13,19 @@ public:
 
         vector<vector<bool>> guarded(m, vector<bool>(n, false));
         vector<pair<int, int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-        queue<tuple<int, int, int, int>> q;
 
         for (auto& guard : guards) {
+            int x = guard[0], y = guard[1];
             for (auto [dx, dy] : directions) {
-                q.push({guard[0], guard[1], dx, dy});
-            }
-        }
-
-        while (!q.empty()) {
-            auto [x, y, dx, dy] = q.front();
-            q.pop();
-
-            int nx = x + dx, ny = y + dy;
-
-            if (nx >= 0 && nx < m && ny >= 0 && ny < n &&
-                grid[nx][ny] != 'W' && grid[nx][ny] != 'G') {
-                if (grid[nx][ny] == '.') {
-                    guarded[nx][ny] = true;
+                int nx = x + dx, ny = y + dy;
+                while (nx >= 0 && nx < m && ny >= 0 && ny < n &&
+                       grid[nx][ny] != 'W' && grid[nx][ny] != 'G') {
+                    if (grid[nx][ny] == '.') {
+                        guarded[nx][ny] = true;
+                    }
+                    nx += dx;
+                    ny += dy;
                 }
-                q.push({nx, ny, dx, dy});
             }
         }
 
