@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/chandranshh/LeetCodePR/tree/master/0463-island-perimeter) |
 | [0485-max-consecutive-ones](https://github.com/chandranshh/LeetCodePR/tree/master/0485-max-consecutive-ones) |
 | [0542-01-matrix](https://github.com/chandranshh/LeetCodePR/tree/master/0542-01-matrix) |
+| [0682-baseball-game](https://github.com/chandranshh/LeetCodePR/tree/master/0682-baseball-game) |
 | [0695-max-area-of-island](https://github.com/chandranshh/LeetCodePR/tree/master/0695-max-area-of-island) |
 | [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
@@ -243,6 +244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0682-baseball-game](https://github.com/chandranshh/LeetCodePR/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/chandranshh/LeetCodePR/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/chandranshh/LeetCodePR/tree/master/2343-count-unguarded-cells-in-the-grid) |
@@ -253,5 +255,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0682-baseball-game](https://github.com/chandranshh/LeetCodePR/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
 <!---LeetCode Topics End-->
