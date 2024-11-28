@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/chandranshh/LeetCodePR/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/chandranshh/LeetCodePR/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/chandranshh/LeetCodePR/tree/master/1036-rotting-oranges) |
 | [1039-find-the-town-judge](https://github.com/chandranshh/LeetCodePR/tree/master/1039-find-the-town-judge) |
@@ -178,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/chandranshh/LeetCodePR/tree/master/0004-median-of-two-sorted-arrays) |
 | [0268-missing-number](https://github.com/chandranshh/LeetCodePR/tree/master/0268-missing-number) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/chandranshh/LeetCodePR/tree/master/0907-koko-eating-bananas) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/chandranshh/LeetCodePR/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 ## Divide and Conquer
@@ -205,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/chandranshh/LeetCodePR/tree/master/0264-ugly-number-ii) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Tree
 |  |
 | ------- |
@@ -218,6 +221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 |  |
 | ------- |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1240-stone-game-ii](https://github.com/chandranshh/LeetCodePR/tree/master/1240-stone-game-ii) |
 ## Game Theory
 |  |
@@ -252,9 +256,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0713-subarray-product-less-than-k](https://github.com/chandranshh/LeetCodePR/tree/master/0713-subarray-product-less-than-k) |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Stack
 |  |
 | ------- |
 | [0682-baseball-game](https://github.com/chandranshh/LeetCodePR/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/chandranshh/LeetCodePR/tree/master/0735-asteroid-collision) |
+## Queue
+|  |
+| ------- |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0892-shortest-subarray-with-sum-at-least-k](https://github.com/chandranshh/LeetCodePR/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 <!---LeetCode Topics End-->
